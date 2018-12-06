@@ -9,7 +9,6 @@ duplicates in the final array.
 
 function uniteUnique(arr) {
   let newArr = [...arguments].reduce((x, y) => x.concat(y), []);
-
   return newArr.filter((x, y) => newArr.indexOf(x) == y);
 }
 
